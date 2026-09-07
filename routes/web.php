@@ -12,4 +12,6 @@ Route::get('/welcome', function () {
 Route::get('/', [PageController::class, 'index']);
 
 // LOGIN
-Route::get('/login', [LoginController::class, 'index']); 
+Route::get('/login', [LoginController::class, 'index']);
+
+Route::post('/login' , [LoginController::class, 'authenticate']);
